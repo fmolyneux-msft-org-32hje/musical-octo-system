@@ -34,6 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo MY_ORG_VARIABLE is ${{ vars.MY_ORG_VARIABLE }} and MY_REPO_VARIABLE is ${{ vars.MY_REPO_VARIABLE }}
 
   development:
     # The type of runner that the job will run on
