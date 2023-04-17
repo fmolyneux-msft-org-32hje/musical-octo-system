@@ -66,7 +66,7 @@ jobs:
           # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           
-      - name: Hello world - docker
+      - name: Hello World through Docker
         uses: fmolyneux-msft-org-32hje/hello-world-docker-action@main
         with:
           who-to-greet: Fraser
