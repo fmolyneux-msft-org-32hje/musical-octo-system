@@ -67,7 +67,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           
       - name: Hello World through Docker
-        uses: fmolyneux-msft-org-32hje/hello-world-docker-action@main
+        uses: fmolyneux-msft-org-32hje/hello-world-docker-action@v1.0
         with:
           who-to-greet: Fraser
 
