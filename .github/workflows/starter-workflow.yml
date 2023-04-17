@@ -65,6 +65,11 @@ jobs:
         with:
           # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          
+      - name: Hello world - docker
+        uses: fmolyneux-msft-org-32hje/hello-world-docker-action@main
+        with:
+          who-to-greet: Fraser
 
   production:
     # The type of runner that the job will run on
