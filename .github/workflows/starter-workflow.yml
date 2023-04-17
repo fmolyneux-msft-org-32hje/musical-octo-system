@@ -75,6 +75,11 @@ jobs:
         uses: fmolyneux-msft-org-32hje/hello-world-javascript-action@v1.0
         with:
           who-to-greet: Fraser
+          
+      - name: Hello World through Composite Action
+        uses: fmolyneux-msft-org-32hje/hello-world-composite-action@v1.0
+        with:
+          who-to-greet: Fraser
 
   production:
     # The type of runner that the job will run on
