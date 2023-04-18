@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -59,27 +59,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo MY_ENV_VARIABLE is ${{ vars.MY_ENV_VARIABLE }}
-          
-      #- name: Azure Login
-      #  uses: Azure/login@v1.4.6
-      #  with:
-      #    # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
-      #    creds: ${{ secrets.AZURE_CREDENTIALS }}
-          
-      - name: Hello World through Docker
-        uses: fmolyneux-msft-org-32hje/hello-world-docker-action@v1.0
-        with:
-          who-to-greet: Fraser
-          
-      - name: Hello World through Javascript
-        uses: fmolyneux-msft-org-32hje/hello-world-javascript-action@v1.0
-        with:
-          who-to-greet: Fraser
-          
-      - name: Hello World through Composite Action
-        uses: fmolyneux-msft-org-32hje/hello-world-composite-action@v1.0
-        with:
-          who-to-greet: Fraser
 
   production:
     # The type of runner that the job will run on
