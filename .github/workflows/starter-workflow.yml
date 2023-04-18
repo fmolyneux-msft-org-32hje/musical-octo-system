@@ -40,6 +40,11 @@ jobs:
         uses: fmolyneux-msft-org-32hje/docker-action@1.0
         with:
           who-to-greet: Tarik
+          
+      - name: Our Javascript Action
+        uses: fmolyneux-msft-org-32hje/javascript-action@1.0
+        with:
+          who-to-greet: Redha
 
   development:
     # The type of runner that the job will run on
