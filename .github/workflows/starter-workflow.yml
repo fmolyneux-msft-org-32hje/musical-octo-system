@@ -36,6 +36,11 @@ jobs:
           echo test, and deploy your project.
           echo MY_ORG_VARIABLE is ${{ vars.MY_ORG_VARIABLE }} and MY_REPO_VARIABLE is ${{ vars.MY_REPO_VARIABLE }}
 
+      - name: Our Docker Action
+        uses: fmolyneux-msft-org-32hje/docker-action@main
+        with:
+          who-to-greet: Tarik
+
   development:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
