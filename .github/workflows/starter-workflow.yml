@@ -37,7 +37,7 @@ jobs:
           echo MY_ORG_VARIABLE is ${{ vars.MY_ORG_VARIABLE }} and MY_REPO_VARIABLE is ${{ vars.MY_REPO_VARIABLE }}
 
       - name: Our Docker Action
-        uses: fmolyneux-msft-org-32hje/docker-action@main
+        uses: fmolyneux-msft-org-32hje/docker-action@1.0
         with:
           who-to-greet: Tarik
 
