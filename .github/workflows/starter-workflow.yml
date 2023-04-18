@@ -45,6 +45,11 @@ jobs:
         uses: fmolyneux-msft-org-32hje/javascript-action@1.0
         with:
           who-to-greet: Redha
+          
+      - name: Our Composite Action
+        uses: fmolyneux-msft-org-32hje/composite-action@1.0
+        with:
+          who-to-greet: Mohamed
 
   development:
     # The type of runner that the job will run on
